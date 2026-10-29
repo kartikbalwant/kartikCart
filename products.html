@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product | KartikCart</title>
+
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="products.css">
+
+      <header>
+        <div class="navbar">
+             <div class="icon"><img src="ecomlogo4.png" alt=""> </div>
+                 <div class="search"> 
+                    <input type="text" placeholder="kartikcart search">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                 </div>
+                 <div class="wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                    wishlist
+                 <div class="cart" onclick="window.location.href='cart.html'">
+    <button>
+        <i class="fa-solid fa-cart-shopping"></i>
+    </button>
+    Cart
+</div>
+                 <div class="hello">
+                    <i class="fa-solid fa-user"></i>
+                     <div class="hello1">
+                      <span class="hello11">Hello, User</span>
+                      <span class="hello12">My Account</span>
+                    </div>
+                 </div>
+          </div>
+    </header>
+
+    <div class="proinfo">
+        <div class="proimg">
+            <img id="productImage" src="" alt="Product">
+        </div>
+        <div class="prodetail">
+           <h3 id="productName"></h3>
+              <div class="rating">
+                <span>★ <span id="productRating"></span></span>
+                <small>(<span id="productReviews"></span>)</small>
+            </div>
+            <div id="productDiscount"></div>
+             <div class="price">
+            <span id="productPrice"></span>
+            <del id="productOldPrice"></del>
+            </div>
+              <button class="add-car">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Add to Cart
+            </button>
+        </div>
+    
+            
+
+        </div>
+    </div>
+
+    <script src="products.js"></script>
+
+</body>
+</html>

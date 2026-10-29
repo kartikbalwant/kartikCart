@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cart | KartikCart</title>
+
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="cart.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+        <div class="navbar">
+
+            <div class="icon">
+                <img src="ecomlogo4.png" alt="KartikCart">
+            </div>
+
+            <div class="search">
+                <input type="text" placeholder="kartikcart search">
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <div class="wishlist">
+                <i class="fa-regular fa-heart"></i>
+                wishlist
+            </div>
+
+            <div class="cart" onclick="window.location.href='cart.html'">
+                <button>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+                Cart
+            </div>
+
+            <div class="hello">
+                <i class="fa-solid fa-user"></i>
+
+                <div class="hello1">
+                    <span class="hello11">Hello, User</span>
+                    <span class="hello12">My Account</span>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- CART -->
+
+    <main class="cart-container">
+
+        <h1>Shopping Cart</h1>
+
+        <div id="cartItems">
+
+            <!-- Products will appear here -->
+
+        </div>
+
+
+        <!-- CART SUMMARY -->
+
+        <div class="cart-summary">
+
+            <h2>Cart Summary</h2>
+
+            <div class="summary-row">
+                <span>Total Items</span>
+                <span id="totalItems">0</span>
+            </div>
+
+            <div class="summary-row">
+                <span>Total Price</span>
+                <span id="totalPrice">₹0</span>
+            </div>
+
+           <button class="checkout-btn" onclick="window.location.href='payment.html'">
+            Proceed to Checkout
+          </button>
+
+        </div>
+
+    </main>
+
+
+    <script src="cart.js"></script>
+
+</body>
+
+</html>

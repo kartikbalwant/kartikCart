@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>KartikCart - Checkout</title>
+<link rel="stylesheet" href="payment.css">
+</head>
+<body>
+<header class="header"><div class="logo">KartikCart</div><div>🔒 Secure Checkout</div></header>
+
+<main class="container">
+<div class="title"><h1>Checkout</h1><p>Complete your order in a few simple steps</p></div>
+
+<div class="layout">
+<section>
+<div class="card">
+<div class="section-head"><div class="icon">📍</div><div><h2>Delivery Address</h2><p>Enter the address where you want your order delivered.</p></div></div>
+
+<form id="addressForm">
+<div class="grid">
+<div class="field full"><label>Full Name *</label><input id="fullName" required placeholder="Enter your full name"></div>
+<div class="field"><label>Mobile Number *</label><input id="mobile" required maxlength="10" placeholder="10-digit mobile number"></div>
+<div class="field"><label>PIN Code *</label><input id="pincode" required maxlength="6" placeholder="6-digit PIN code"></div>
+<div class="field full"><label>House / Flat / Street *</label><input id="address" required placeholder="House no., building, street, area"></div>
+<div class="field"><label>City *</label><input id="city" required placeholder="Enter city"></div>
+<div class="field"><label>State *</label><select id="state" required>
+<option value="">Select State</option><option>Uttar Pradesh</option><option>Delhi</option><option>Bihar</option><option>Madhya Pradesh</option><option>Maharashtra</option><option>Rajasthan</option><option>Gujarat</option><option>Haryana</option><option>Punjab</option><option>West Bengal</option><option>Other</option>
+</select></div>
+</div>
+</form>
+</div>
+
+<div class="card">
+<div class="section-head"><div class="icon">💳</div><div><h2>Payment Method</h2><p>Choose your preferred payment method.</p></div></div>
+
+<div class="payment-options">
+<label class="payment-option active"><input type="radio" name="payment" value="UPI" checked><b>📱</b><span><strong>UPI</strong><small>Google Pay, PhonePe, Paytm, etc.</small></span></label>
+<label class="payment-option"><input type="radio" name="payment" value="Card"><b>💳</b><span><strong>Credit / Debit Card</strong><small>Visa, Mastercard, RuPay</small></span></label>
+<label class="payment-option"><input type="radio" name="payment" value="Net Banking"><b>🏦</b><span><strong>Net Banking</strong><small>Pay using your bank account</small></span></label>
+<label class="payment-option"><input type="radio" name="payment" value="Cash on Delivery"><b>💵</b><span><strong>Cash on Delivery</strong><small>Pay when your order arrives</small></span></label>
+</div>
+<div id="paymentDetails"></div>
+</div>
+</section>
+
+<aside class="summary card">
+<h2>Order Summary</h2>
+<div id="productList"></div>
+<div class="line"><span>Subtotal</span><strong id="subtotal">₹0</strong></div>
+<div class="line"><span>Delivery</span><strong class="free">FREE</strong></div>
+<div class="total"><span>Total</span><strong id="total">₹0</strong></div>
+<button id="payBtn">
+    <span id="payText">Continue to Pay</span>
+    <strong id="payAmount">₹0</strong>
+</button>
+<div class="secure">🔒 <b>Safe & Secure</b><br><small>Your order information is handled securely.</small></div>
+</aside>
+</div>
+</main>
+<script src="payment.js"></script>
+</body>
+</html>
